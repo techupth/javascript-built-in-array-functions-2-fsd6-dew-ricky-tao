@@ -374,4 +374,20 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+const billMembers = bills
+  .filter(function (item) {
+    return item.member;
+  })
+  .map(function (item) {
+    return item.member.name;
+  });
+
+console.log(billMembers);
+
+// console.log(
+//   bills.filter(function (item) {
+//     return item.member;
+//   }).map(function(item){
+//     return item.member.name
+//   })
+// );
