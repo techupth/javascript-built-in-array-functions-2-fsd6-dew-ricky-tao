@@ -374,11 +374,11 @@ const bills = [
 ];
 
 // Start coding here
-console.log(
-  bills.reduce(function (acc, curr) {
-    return acc + curr.total;
-  }, 0)
-);
+// console.log(
+//   bills.reduce(function (acc, curr) {
+//     return acc + curr.total;
+//   }, 0)
+// );
 
 let totalSum = bills.reduce(function (acc, curr) {
   return acc + curr.total;
