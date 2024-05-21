@@ -373,5 +373,12 @@ const bills = [
   },
 ];
 
-// Start coding here
-const billMembers;
+let filterOutNull = bills.filter((bills) => {
+  return bills.member !== null;
+});
+
+let OnlyName = filterOutNull.map((memberName) => {
+  return memberName.member.name;
+});
+
+console.log(OnlyName);
